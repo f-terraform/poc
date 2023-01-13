@@ -1,12 +1,6 @@
 name: Run Terraform to plan GitHub repository with branch protection
 
-on:
-  workflow_dispatch:
-    inputs:
-      init-repo:
-        description: "Do you want to create repository? (yes/no)"
-        required: true
-        default: 'yes'
+on: [pull-request]
 
 env:
   TF_VAR_gh_token: ${{ secrets.ORG_TOKEN }}
