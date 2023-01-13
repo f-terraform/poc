@@ -1,6 +1,6 @@
 name: Run Terraform to plan GitHub repository with branch protection
 
-on: [pull-request]
+on: [pull_request]
 
 env:
   TF_VAR_gh_token: ${{ secrets.ORG_TOKEN }}
