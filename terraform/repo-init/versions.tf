@@ -12,7 +12,7 @@ terraform {
 #   }
 
     backend "gcs" {
-    bucket  = "f_terraform_poc"
+    bucket  = "f-terraform-poc"
     prefix  = "terraform/state"
     }
 }
