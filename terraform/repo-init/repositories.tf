@@ -2,7 +2,7 @@ resource "github_repository" "terraform-created-repo" {
     name = "terraform-created-repo"
     description = "This is a description"
 
-    visibility = "private"
+    visibility = "public"
     auto_init = true
 
     has_issues = true
