@@ -32,7 +32,7 @@ resource "github_branch_protection" "branch-enterprise" {
     }
 }
 
-resource "github_branch_protection" "branch-enterprise" {
+resource "github_branch_protection" "second-branch" {
     repository_id = github_repository.terraform-created-repo.node_id
 
     lifecycle {
