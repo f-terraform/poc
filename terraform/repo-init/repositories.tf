@@ -5,7 +5,7 @@ resource "github_repository" "terraform-created-repo" {
     visibility = "public"
     auto_init = true
 
-    topics = ["Matt's Topic"]
+    topics = ["matts-topic"]
 
     has_issues = true
 }
