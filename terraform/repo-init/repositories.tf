@@ -31,3 +31,19 @@ resource "github_branch_protection" "branch-enterprise" {
         restrict_dismissals = true
     }
 }
+
+resource "github_branch_protection" "second-branch" {
+    repository_id = github_repository.terraform-created-repo.node_id
+
+    lifecycle {
+        ignore_changes  = [pattern]
+    }
+
+    pattern = "protect-this-branch-too"
+    enforce_admins = true
+
+    required_pull_request_reviews {
+        dismiss_stale_reviews = false
+        restrict_dismissals = true
+    }
+}
