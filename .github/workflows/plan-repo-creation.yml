@@ -1,6 +1,9 @@
 name: Run Terraform to plan GitHub repository with branch protection
 
-on: [pull_request]
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
 
 env:
   TF_VAR_gh_token: ${{ secrets.ORG_TOKEN }}
