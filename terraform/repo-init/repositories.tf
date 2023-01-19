@@ -23,7 +23,7 @@ resource "github_branch_default" "default" {
 resource "github_branch_protection" "branch-enterprise" {
     repository_id = github_repository.terraform-created-repo.node_id
 
-    pattern = "development"
+    pattern = "developments"
     enforce_admins = true
 
     required_pull_request_reviews {
