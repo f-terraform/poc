@@ -2,7 +2,6 @@ name: Run Terraform to plan GitHub repository with branch protection
 
 on:
   pull_request:
-  push:
   workflow_dispatch:
 
 env:

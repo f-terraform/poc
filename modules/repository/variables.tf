@@ -12,5 +12,5 @@ variable "repo_topics" {
 
 variable "repo_visibility" {
     type    = string
-    default = "internal"
+    default = "public"
 }
