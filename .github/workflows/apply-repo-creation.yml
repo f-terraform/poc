@@ -10,6 +10,8 @@ on:
 
 env:
   TF_VAR_gh_token: ${{ secrets.ORG_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.ORG_TOKEN }}
+  GITHUB_OWNER: f-terraform
   
 permissions:
   contents: 'read'
