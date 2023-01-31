@@ -7,7 +7,7 @@ terraform {
     }
 
     backend "gcs" {
-    bucket  = "f-terraform-poc"
-    prefix  = "terraform/state"
+        bucket  = "f-terraform-poc"
+        prefix  = "terraform/state"
     }
 }
