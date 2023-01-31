@@ -3,7 +3,7 @@ locals {
     repositories = [for repo in local.repositories_data : repo]
 }
 
-module "repository" "new_repo" {
+module "new_repo" {
     for_each = local.repositories
     source = "../../modules/repository"
 
