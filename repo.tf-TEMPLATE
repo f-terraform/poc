@@ -1,0 +1,7 @@
+module "repository" "$REPO_NAME" {
+    source = "../../modules/repository"
+
+    repo_name        = $REPO_NAME
+    repo_description = $REPO_DESCRIPTION
+    repo_topics      = $REPO_TOPICS
+}
