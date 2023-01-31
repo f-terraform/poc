@@ -1,13 +1,13 @@
 locals {
     repositories_data = jsondecode(file("${path.module}/repositories.json"))
-    repositories_list = [for repositories in local.repositories_data.repositories : repositories]
+    repositories_list = local.repositories_data.repositories
 }
 
 module "new_repo" {
-    for_each = local.repositories_data
+    for_each = local.repositories_list
     source = "../../modules/repository"
 
-    repo_name        = each.value.name
+    repo_name        = each.key
     repo_description = each.value.description
     repo_topics      = each.value.topics
 }
