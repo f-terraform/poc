@@ -4,7 +4,7 @@ locals {
 }
 
 module "new_repo" {
-    for_each = local.repositories
+    for_each = local.repositories_list
     source = "../../modules/repository"
 
     repo_name        = each.name
