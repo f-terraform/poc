@@ -2,18 +2,15 @@
     "repositories": {
         "Repo1": {
             "description": "this is Repo1",
-            "topics": ["topic-one", "topic-two"],
-            "branchProtections": "dev"
+            "topics": ["topic-one", "topic-two"]
         },
         "Repo2": {
             "description": "this is Repo2",
-            "topics": ["topic-one", "topic-two"],
-            "branchProtections": "qa"
+            "topics": ["topic-one", "topic-two"]
         },
         "Repo3": {
             "description": "this is Repo3",
-            "topics": ["topic-one", "topic-two"],
-            "branchProtections": "uat"
+            "topics": ["topic-one", "topic-two"]
         }
     }
 }

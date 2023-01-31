@@ -6,15 +6,11 @@ locals {
 provider "github" {
     owner = "f-terraform"
     token = var.gh_token
-    alias = "github-f-terraform"
 }
 
 module "new_repo" {
     for_each  = local.repositories_list
     source    = "../../modules/repository"
-    providers = {
-        github = github.github-f-terraform
-    }
 
     repo_name        = each.key
     repo_description = each.value.description
