@@ -7,7 +7,7 @@ module "new_repo" {
     for_each  = local.repositories_list
     source    = "../../modules/repository"
     providers = {
-
+        github = "github"
     }
 
     repo_name        = each.key
