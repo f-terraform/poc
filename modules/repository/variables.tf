@@ -10,7 +10,7 @@ variable "repo_topics" {
     type = list(string)
 }
 
-variable "repo_visiblity" {
+variable "repo_visibility" {
     type    = string
     default = "internal"
 }

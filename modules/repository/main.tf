@@ -14,7 +14,7 @@ resource "github_repository" "generated-repo" {
 }
 
 resource "github_branch_protection" "main" {
-    repository_id  = github_repository.terraform-created-repo.node_id
+    repository_id  = github_repository.generated-repo.node_id
     pattern        = "main"
     enforce_admins = true
 
